@@ -1,0 +1,4 @@
+
+require './pameme'
+
+run Pameme

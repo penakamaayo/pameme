@@ -1,6 +1,12 @@
-require 'sinatra'
+require 'sinatra/base'
+require 'json'
 
-get '/' do
-  'Hellow World'
+class Pameme < Sinatra::Base
+
+  get '/' do
+    'Pamemeeee'
+  end
+
+
+
 end
-
