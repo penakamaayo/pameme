@@ -12,7 +12,7 @@ post '/' do
   if params_present? && meme
     parse_url meme.original_image.url
   else
-    parse_msg 'Walang ganun. sarree - :james:'
+    parse_url 'Walang ganun. sarree - :james:'
   end
 end
 
