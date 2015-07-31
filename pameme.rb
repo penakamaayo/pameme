@@ -12,7 +12,7 @@ post '/' do
   if params_present? && meme
     parse_url meme.original_image.url
   else
-    parse_url 'Walang ganun. sarree - :james:'
+    parse_url 'Orayt. Walang ganun. sarree - :james:'
   end
 end
 
@@ -31,11 +31,6 @@ end
 
 
 def meme
-  @pameme ||= Giphy.search(search_term).sample
-end
-
-
-def search_term
-  params[:text].gsub(params[:trigger_word], '').strip
+  @pameme ||= Giphy.search(params[:text].strip).sample
 end
 
