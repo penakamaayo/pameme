@@ -1,12 +1,7 @@
-require 'sinatra/base'
+require 'sinatra'
 require 'json'
 
-class Pameme < Sinatra::Base
-
-  get '/' do
-    'Pamemeeee'
-  end
-
-
-
+get '/' do
+  'Pamemeeehhhh..'
 end
+
