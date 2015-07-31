@@ -10,7 +10,7 @@ post '/' do
   content_type :json
 
   if params_present? && meme
-    parse_url random_gif.original_image.url
+    parse_url meme.original_image.url
   else
     parse_msg 'Walang ganun. sarree - :james:'
   end
