@@ -31,6 +31,11 @@ end
 
 
 def meme
-  @pameme ||= Giphy.search(params[:text].strip).sample
+  @pameme ||= Giphy.search(search_term).sample
+end
+
+
+def search_term
+  params[:text].gsub(params[:trigger_word], '').strip
 end
 
