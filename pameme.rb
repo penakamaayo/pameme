@@ -31,7 +31,7 @@ end
 
 
 def meme
-  @pameme ||= Giphy.search(params[:text]).sample
+  @pameme ||= Giphy.search(search_term).sample
 end
 
 
